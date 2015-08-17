@@ -1,0 +1,17 @@
+<form {{action "submit" on="submit"}}>
+  <div class="row">
+    <label for="title">Title:</label>
+    {{input type="hidden" value=id}}
+    {{input type='text' value=title class="form-control" placeholder="Title"}}
+  </div>
+  <div class="row" >
+    <label for="body">Body:</label>
+    {{textarea value=body class="form-control" rows="5"}}
+  </div>
+  <div class="clearfix"></div>
+  <div class="row">
+    <div class="col-sm-offset-11">
+      <button class="btn btn-success">{{buttonValue}}</button>
+    </div>
+  </div>
+</form>

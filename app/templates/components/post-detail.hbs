@@ -1,0 +1,13 @@
+<label for="title" >Title:</label>
+<div class="row">
+  <p id="title">{{post.title}}</p>
+  <label for="body" >Body:</label>
+</div>
+<div class="row">
+  <p id="body">{{post.body}}</p>
+</div>
+<div class="row">
+  {{#link-to 'posts.post' post class="btn btn-info"}}Edit{{/link-to}}
+  <button type="button" class="btn btn-danger" {{action "deletePost" post}}>Delete</button>
+</div>
+{{yield}}

@@ -1,0 +1,11 @@
+<div id="posts" class="col-sm-3 post-details info-panel">
+  {{#each model as |post|}}
+    {{post-detail post=post click="deletePost" }}
+  {{/each}}
+</div>
+<div class="col-sm-9">
+  {{post-new submit="createPost" buttonValue="Create"}}
+</div>
+<div class="col-sm-12">
+  {{post-detail post=postC }}
+</div>
